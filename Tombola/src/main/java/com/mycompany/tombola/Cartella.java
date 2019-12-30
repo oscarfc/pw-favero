@@ -111,4 +111,16 @@ public class Cartella {
     public String getThirdRow() {
         return getRow(10, 15);
     }
+
+    public boolean segnaEstratto(int estratto) {
+        boolean cartellaContieneNumero = false;
+        for (int i = 0; i < NUMERO_CASELLE; i++) {
+            if (caselle[i].getNumero() == estratto) {
+                caselle[i].setSegnato(true);
+                cartellaContieneNumero = true;
+                break;
+            }
+        }
+        return cartellaContieneNumero;
+    }
 }
