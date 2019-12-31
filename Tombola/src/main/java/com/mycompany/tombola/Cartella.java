@@ -123,4 +123,108 @@ public class Cartella {
         }
         return cartellaContieneNumero;
     }
+
+    public boolean verificaAmbo() {
+        boolean cartellaContieneAmbo = false;
+        if (this.verificaAmboRow(0, 5)) {
+            cartellaContieneAmbo = true;
+        } else if (this.verificaAmboRow(5, 10)) {
+            cartellaContieneAmbo = true;
+        } else if (this.verificaAmboRow(10, 15)) {
+            cartellaContieneAmbo = true;
+        }
+        return cartellaContieneAmbo;
+    }
+
+    boolean verificaTerno() {
+        boolean cartellaContieneTerno = false;
+        if (this.verificaTernoRow(0, 5)) {
+            cartellaContieneTerno = true;
+        } else if (this.verificaTernoRow(5, 10)) {
+            cartellaContieneTerno = true;
+        } else if (this.verificaTernoRow(10, 15)) {
+            cartellaContieneTerno = true;
+        }
+        return cartellaContieneTerno;
+    }
+
+    boolean verificaQuaterna() {
+        boolean cartellaContieneQuaterna = false;
+        if (this.verificaQuaternaRow(0, 5)) {
+            cartellaContieneQuaterna = true;
+        } else if (this.verificaQuaternaRow(5, 10)) {
+            cartellaContieneQuaterna = true;
+        } else if (this.verificaQuaternaRow(10, 15)) {
+            cartellaContieneQuaterna = true;
+        }
+        return cartellaContieneQuaterna;
+    }
+
+    boolean verificaCinquina() {
+        boolean cartellaContieneCinquina = false;
+        if (this.verificaCinquinaRow(0, 5)) {
+            cartellaContieneCinquina = true;
+        } else if (this.verificaCinquinaRow(5, 10)) {
+            cartellaContieneCinquina = true;
+        } else if (this.verificaCinquinaRow(10, 15)) {
+            cartellaContieneCinquina = true;
+        }
+        return cartellaContieneCinquina;
+    }
+
+    private boolean verificaAmboRow(int primo, int ultimo) {
+        boolean rowContieneAmbo = false;
+        int ambo = 0;
+        for (int i = primo; i < ultimo; i++) {
+            if (caselle[i].isSegnato()) {
+                ambo++;
+            }
+        }
+        if (ambo == 2) {
+            rowContieneAmbo = true;
+        }
+        return rowContieneAmbo;
+    }
+
+    private boolean verificaTernoRow(int primo, int ultimo) {
+        boolean rowContieneTerno = false;
+        int terno = 0;
+        for (int i = primo; i < ultimo; i++) {
+            if (caselle[i].isSegnato()) {
+                terno++;
+            }
+        }
+        if (terno == 3) {
+            rowContieneTerno = true;
+        }
+        return rowContieneTerno;
+    }
+
+    private boolean verificaQuaternaRow(int primo, int ultimo) {
+        boolean rowContieneQuaterna = false;
+        int quarterna = 0;
+        for (int i = primo; i < ultimo; i++) {
+            if (caselle[i].isSegnato()) {
+                quarterna++;
+            }
+        }
+        if (quarterna == 4) {
+            rowContieneQuaterna = true;
+        }
+        return rowContieneQuaterna;
+    }
+
+    private boolean verificaCinquinaRow(int primo, int ultimo) {
+        boolean rowContieneCinquina = false;
+        int cinquina = 0;
+        for (int i = primo; i < ultimo; i++) {
+            if (caselle[i].isSegnato()) {
+                cinquina++;
+            }
+        }
+        if (cinquina == 5) {
+            rowContieneCinquina = true;
+        }
+        return rowContieneCinquina;
+    }
 }
