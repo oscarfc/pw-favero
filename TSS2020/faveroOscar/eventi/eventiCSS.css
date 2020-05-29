@@ -1,0 +1,38 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19 May 2020, 00:15:41
+    Author     : oscar.favero
+*/
+
+input#pulsante1 {
+    background-color: aqua;
+}
+
+input#pulsante2 {
+    background-color: lightblue
+}
+
+input#pulsante3 {
+    background-color: bisque
+}
+
+input#pulsante4 {
+    background-color: greenyellow
+}
+
+table#tabella td {
+    width: 40px;
+    height: 40px;
+    text-align: left;
+    border: solid 1px black;
+}
+
+table#tabella th {
+    width:20px;
+    text-align: center;
+    background-color: green;
+}

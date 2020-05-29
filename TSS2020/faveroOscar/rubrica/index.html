@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Rubrica</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="..\libreria.js" >
+        </script>
+        <link href="rubrica.css" rel="stylesheet" type="text/css"/>    </head>
+    <body>
+        <h1>Rubrica</h1>
+        <form action="">
+            <div class="campo">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" />
+            </div>
+            <div class="campo">
+                <label for="cognome">Cognome</label>
+                <input type="text" id="cognome" name="cognome" />
+            </div>
+            <div class="campo">
+                <label for="indirizzo">Indirizzo</label>
+                <input type="text" id="indirizzo" name="indirizzo" />
+            </div>
+            <div class="campo">
+                <label for="citta">Città</label>
+                <input type="text" id="citta" name="citta" />
+            </div>
+            <div class="campo">
+                <label for="telefono">Telefono</label>
+                <input type="text" id="telefono" name="telefono" />
+            </div>
+            <div class="campo">
+                <input type="button" id = "indietro" value="indietro" onclick="" />
+                <label id="indice">. .</label>
+                <input type="button" id = "avanti" value="avanti" onclick="" />
+                <input type="button" id = "modifica" value="modifica" onclick="" />
+                <input type="button" id = "inserisci" value="inserisci" onclick="" />
+                <input type="button" id = "cancella" value="cancella" onclick="" />
+            </div>
+        </form> 
+
+        <script>
+            loadScript("rubrica.js");
+        </script>
+    </body>
+</html>

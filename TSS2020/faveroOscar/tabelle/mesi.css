@@ -1,0 +1,62 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 8 May 2020, 14:57:16
+    Author     : oscar.favero
+*/
+
+
+table {
+    color: brown;
+    background-color: bisque;
+    border: solid 1px;
+}
+
+td, th {
+    width:40px;
+    height:40px;
+    text-align: right;
+    vertical-align: top;
+}
+
+#oggi{
+    outline: dashed 3px red;
+    
+}
+
+.altroMese {
+    color:gray;
+    font-size: 15px;
+    font-style: italic;
+    text-align: center;
+    vertical-align: middle;
+}
+
+a {
+    color: chartreuse;
+    text-decoration: underline overline;
+}
+
+
+/*
+sottoclasse per definire il cambio di coloro quando viene raggiunto dal cursore del mouse
+*/
+a:hover {
+    color: deeppink;   
+    text-decoration: underline blue;
+}
+
+table#rubrica td {
+    width:100px;
+    text-align: left;
+    border-right: solid 1px black;
+}
+
+table#rubrica th {
+    width:150px;
+    text-align: center;
+    background-color: green;
+}

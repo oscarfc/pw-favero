@@ -1,0 +1,43 @@
+[
+    {
+        "nome": "Giulio",
+        "cognome": "Denti",
+        "indirizzo": "via De Petris",
+        "citta": "Ivrea",
+        "telefono": "0125234567"
+    },
+    {
+        "nome": "Ada",
+        "cognome": "Aldi",
+        "indirizzo": "via Adua",
+        "citta": "Cuneo",
+        "telefono": "012345656789"
+    },
+    {
+        "nome": "Gina",
+        "cognome": "De Meo",
+        "indirizzo": "Largo Stretto",
+        "citta": "Reggio",
+        "telefono": "09812354"
+    },
+    {
+        "nome": "Ugo",
+        "cognome": "Tinti",
+        "indirizzo": "Corso Roma",
+        "citta": "Asti",
+        "telefono": "0161818181"
+    },
+    {
+        "nome": "Aldo",
+        "cognome": "Lindi",
+        "indirizzo": "Piazza CLN",
+        "citta": "Torino",
+        "telefono": "011223344"
+    },
+    {
+        "nome": "Nadia",
+        "cognome": "Piddo",
+        "indirizzo": "Vicolo Artemisia",
+        "citta": "Roma",
+        "telefono": "0612345698 "
+    }]
